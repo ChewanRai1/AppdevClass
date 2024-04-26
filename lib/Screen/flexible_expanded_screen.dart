@@ -8,24 +8,20 @@ class FlexibleExpandedScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Column(
-            children: [
-              Container(
-                width: double.infinity,
-                height: 600,
-                color: Colors.amber,
-              )
-            ],
+          Container(
+            width: double.infinity,
+            height: 600,
+            decoration: const BoxDecoration(
+              color: Colors.amber,
+            ),
           ),
-          Column(
-            children: [
-              Container(
-                width: double.infinity,
-                height: 300,
-                color: Colors.black,
-              )
-            ],
-          )
+          Container(
+            width: double.infinity,
+            height: 600,
+            decoration: const BoxDecoration(
+              color: Colors.green,
+            ),
+          ),
         ],
       ),
     );
