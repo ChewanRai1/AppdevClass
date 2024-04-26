@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/common/snackbar.dart';
 
 class FlexibleExpandedScreen extends StatelessWidget {
   const FlexibleExpandedScreen({super.key});
@@ -37,13 +38,21 @@ class FlexibleExpandedScreen extends StatelessWidget {
               ),
               alignment: Alignment.center,
               child: ElevatedButton(
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.orange),
                   onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Button One is pressed'),
-                        duration: Duration(seconds: 3),
-                      ),
-                    );
+                    // ScaffoldMessenger.of(context).showSnackBar(
+                    // const SnackBar(
+                    //   backgroundColor: Colors.green,
+                    //   content: Text('Button One is pressed'),
+                    //   duration: Duration(seconds: 3),
+                    //   behavior: SnackBarBehavior.floating,
+                    // ),
+                    // );
+                    showMySnackBar(
+                        message: "Buttonn One is pressed now",
+                        context: context,
+                        color: Colors.green);
                   },
                   child: const Text(
                     '1',
@@ -60,15 +69,17 @@ class FlexibleExpandedScreen extends StatelessWidget {
               width: double.infinity,
               height: 200,
               decoration: const BoxDecoration(
-                color: Colors.green,
+                color: Colors.blue,
               ),
               alignment: Alignment.center,
               child: ElevatedButton(
                   onPressed: () {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
+                        backgroundColor: Colors.red,
                         content: Text('Button Two is pressed'),
                         duration: Duration(seconds: 3),
+                        behavior: SnackBarBehavior.floating,
                       ),
                     );
                   },
