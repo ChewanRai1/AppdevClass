@@ -11,7 +11,7 @@ class CommonListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: const Icon(Icons.abc_outlined),
-      title: Text('Title ${index + 1}'),
+      title: Text('Title ${index}'),
       subtitle: const Text('Subtitle'),
       trailing: const Icon(Icons.delete),
     );
