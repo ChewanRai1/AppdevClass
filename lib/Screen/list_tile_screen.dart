@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/app.dart';
 import 'package:flutter_application_1/common/snackbar.dart';
 
 class ListTileScreen extends StatelessWidget {
@@ -6,6 +7,29 @@ class ListTileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text("List Tile"));
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('ListTile'),
+        ),
+        body: Column(children: [
+          ListTile(
+            leading: const Icon(Icons.accessible_forward),
+            title: const Text('Chewan Rai'),
+            subtitle: const Text('Kiran Rana'),
+            trailing: const Icon(Icons.delete),
+            onTap: () {
+              debugPrint('ListTile tapped');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.accessible_forward),
+            title: const Text('Kiran Rana'),
+            subtitle: const Text('Chewan Rai'),
+            trailing: const Icon(Icons.delete),
+            onTap: () {
+              debugPrint('2nd ListTile tapped');
+            },
+          ),
+        ]));
   }
 }
