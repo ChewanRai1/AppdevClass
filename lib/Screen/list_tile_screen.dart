@@ -21,6 +21,7 @@ class ListTileScreen extends StatelessWidget {
                     index: i,
                     imageName: "img_1.jpeg",
                     firstName: "a",
+                    lastName: "a",
                     address: "a",
                   )
                 } else ...{
@@ -28,6 +29,7 @@ class ListTileScreen extends StatelessWidget {
                     index: i,
                     imageName: "img_2.jpeg",
                     firstName: "a",
+                    lastName: "a",
                     address: "a",
                   ),
                 }

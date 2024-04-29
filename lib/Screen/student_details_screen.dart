@@ -91,15 +91,16 @@ class _StudentsDetailsScreenState extends State<StudentsDetailsScreen> {
                             studentsList.add(student!);
                           });
                         },
-                        child: const Text("Add")),
+                        child: const Text("Save Details")),
                     Container(
                       child: Column(
                         children: [
                           for (int i = 0; i < studentsList.length; i++)
                             CommonListTile(
                                 index: i,
-                                imageName: "img_1.jpeg",
+                                imageName: "person.jpeg",
                                 firstName: studentsList[i].firstName!,
+                                lastName: studentsList[i].lastName!,
                                 address: studentsList[i].address!)
                         ],
                       ),
