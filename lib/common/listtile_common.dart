@@ -4,9 +4,13 @@ import 'package:flutter_application_1/Screen/output_screen.dart';
 class CommonListTile extends StatelessWidget {
   final int index;
   final String imageName;
+  final String firstName;
+  final String address;
   const CommonListTile({
     required this.index,
     required this.imageName,
+    required this.firstName,
+    required this.address,
     super.key,
   });
 
@@ -17,15 +21,15 @@ class CommonListTile extends StatelessWidget {
       leading: CircleAvatar(
         backgroundImage: AssetImage('assets/images/$imageName'),
       ),
-      title: Text('Title $index'),
-      subtitle: const Text('Subtitle'),
+      title: Text('Name : $firstName'),
+      subtitle: Text('$address, Nepal'),
       trailing: const Icon(Icons.delete),
       onTap: () {
         Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => OutputScreen(
-                fullname: 'Title $index',
+                fullname: 'Name $firstName',
               ),
             ));
       },

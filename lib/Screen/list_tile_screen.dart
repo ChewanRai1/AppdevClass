@@ -20,11 +20,15 @@ class ListTileScreen extends StatelessWidget {
                   CommonListTile(
                     index: i,
                     imageName: "img_1.jpeg",
+                    firstName: "a",
+                    address: "a",
                   )
                 } else ...{
                   CommonListTile(
                     index: i,
                     imageName: "img_2.jpeg",
+                    firstName: "a",
+                    address: "a",
                   ),
                 }
               }
