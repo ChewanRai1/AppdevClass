@@ -9,7 +9,7 @@ class OutputScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          'Hi $fullname',
+          'Hi $fullname, you are in new screen',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
