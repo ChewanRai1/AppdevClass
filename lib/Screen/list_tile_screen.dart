@@ -16,8 +16,16 @@ class ListTileScreen extends StatelessWidget {
           child: Column(
             children: [
               for (int i = 0; i < 100; i++) ...{
-                if (i % 2 ==0)...{
-                  CommonListTile(index: i)
+                if (i % 2 == 0) ...{
+                  CommonListTile(
+                    index: i,
+                    imageName: "img_1.jpeg",
+                  )
+                } else ...{
+                  CommonListTile(
+                    index: i,
+                    imageName: "img_2.jpeg",
+                  ),
                 }
               }
             ],

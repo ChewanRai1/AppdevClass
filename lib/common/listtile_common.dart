@@ -3,15 +3,20 @@ import 'package:flutter_application_1/Screen/output_screen.dart';
 
 class CommonListTile extends StatelessWidget {
   final int index;
+  final String imageName;
   const CommonListTile({
     required this.index,
+    required this.imageName,
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: const Icon(Icons.abc_outlined),
+      // leading: Image.asset('assets/images/img_2.jpeg'),
+      leading: CircleAvatar(
+        backgroundImage: AssetImage('assets/images/$imageName'),
+      ),
       title: Text('Title $index'),
       subtitle: const Text('Subtitle'),
       trailing: const Icon(Icons.delete),
@@ -20,7 +25,7 @@ class CommonListTile extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => OutputScreen(
-                fullname: 'HI hehe',
+                fullname: 'Title $index',
               ),
             ));
       },
