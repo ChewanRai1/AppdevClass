@@ -22,7 +22,7 @@ class ListTileScreen extends StatelessWidget {
                     imageName: "img_1.jpeg",
                     firstName: "a",
                     lastName: "a",
-                    address: "a",
+                    address: "a", onDelete: (int ) {  },
                   )
                 } else ...{
                   CommonListTile(
@@ -30,7 +30,7 @@ class ListTileScreen extends StatelessWidget {
                     imageName: "img_2.jpeg",
                     firstName: "a",
                     lastName: "a",
-                    address: "a",
+                    address: "a", onDelete: (int ) {  },
                   ),
                 }
               }

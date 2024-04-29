@@ -92,18 +92,35 @@ class _StudentsDetailsScreenState extends State<StudentsDetailsScreen> {
                           });
                         },
                         child: const Text("Save Details")),
-                    Container(
-                      child: Column(
-                        children: [
-                          for (int i = 0; i < studentsList.length; i++)
-                            CommonListTile(
-                                index: i,
-                                imageName: "person.jpeg",
-                                firstName: studentsList[i].firstName!,
-                                lastName: studentsList[i].lastName!,
-                                address: studentsList[i].address!)
-                        ],
-                      ),
+                    // Container(
+                    //   child: Column(
+                    //     children: [
+                    //       for (int i = 0; i < studentsList.length; i++)
+                    //         CommonListTile(
+                    //             index: i,
+                    //             imageName: "person.jpeg",
+                    //             firstName: studentsList[i].firstName!,
+                    //             lastName: studentsList[i].lastName!,
+                    //             address: studentsList[i].address!)
+                    //     ],
+                    //   ),
+                    // ),
+                    Column(
+                      children: [
+                        for (int i = 0; i < studentsList.length; i++)
+                          CommonListTile(
+                            index: i,
+                            imageName: "person.jpeg",
+                            firstName: studentsList[i].firstName!,
+                            lastName: studentsList[i].lastName!,
+                            address: studentsList[i].address!,
+                            onDelete: (index) {
+                              setState(() {
+                                studentsList.removeAt(index);
+                              });
+                            },
+                          )
+                      ],
                     )
                   ],
                 ),

@@ -7,11 +7,15 @@ class OutputScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Hello $fullname',
-      style: const TextStyle(
-        fontSize: 30,
-        fontWeight: FontWeight.bold,
-      ),),),
+      body: Center(
+        child: Text(
+          'Hi $fullname',
+          style: const TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }
