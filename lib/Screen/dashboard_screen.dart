@@ -25,10 +25,10 @@ class DashboardScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AddTwoNo()),
+                      MaterialPageRoute(builder: (context) => const AddTwoNo()),
                     );
                   },
-                  child: Text("Add")),
+                  child: const Text("Add")),
             ),
             const SizedBox(height: 13),
             SizedBox(
@@ -38,10 +38,10 @@ class DashboardScreen extends StatelessWidget {
                   Navigator.push(
                     // .pushreplacement -> there won't be back button
                     context,
-                    MaterialPageRoute(builder: (context) => SimpleInterest()),
+                    MaterialPageRoute(builder: (context) => const SimpleInterest()),
                   );
                 },
-                child: Text(
+                child: const Text(
                   'Simple Interest',
                 ),
               ),
@@ -54,10 +54,10 @@ class DashboardScreen extends StatelessWidget {
                   Navigator.push(
                     // .pushreplacement -> there won't be back button
                     context,
-                    MaterialPageRoute(builder: (context) => AreaCircle()),
+                    MaterialPageRoute(builder: (context) => const AreaCircle()),
                   );
                 },
-                child: Text(
+                child: const Text(
                   'Area of circle',
                 ),
               ),

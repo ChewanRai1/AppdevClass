@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/model/area_circle_model.dart';
@@ -29,6 +28,7 @@ class _AreaCircleState extends State<AreaCircle> {
                   if (value!.isEmpty) {
                     return 'Enter Radius';
                   }
+                  return null;
                 },
                 onChanged: (value) {
                   radius = double.parse(value);

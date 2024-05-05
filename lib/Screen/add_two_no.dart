@@ -39,6 +39,7 @@ class _AddTwoNoState extends State<AddTwoNo> {
                 if (value!.isEmpty) {
                   return 'Enter no';
                 }
+                return null;
               },
               onChanged: (value) {
                 first = int.parse(value);
@@ -55,6 +56,7 @@ class _AddTwoNoState extends State<AddTwoNo> {
                 if (value!.isEmpty) {
                   return 'Enter no';
                 }
+                return null;
               },
               onChanged: (value) {
                 second = int.parse(value);

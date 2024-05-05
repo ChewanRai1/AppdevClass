@@ -38,6 +38,7 @@ class _StudentsDetailsScreenState extends State<StudentsDetailsScreen> {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your first name';
                         }
+                        return null;
                       },
                       onChanged: (value) {
                         firstName = value;
@@ -54,6 +55,7 @@ class _StudentsDetailsScreenState extends State<StudentsDetailsScreen> {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your last name';
                         }
+                        return null;
                       },
                       onChanged: (value) {
                         lastName = value;
@@ -70,6 +72,7 @@ class _StudentsDetailsScreenState extends State<StudentsDetailsScreen> {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your address';
                         }
+                        return null;
                       },
                       onChanged: (value) {
                         address = value;

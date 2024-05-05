@@ -33,9 +33,9 @@ class ArithmeticScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 SizedBox(
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: () {}, child: Text("Add")),
+                  child: ElevatedButton(onPressed: () {}, child: const Text("Add")),
                 ),
-                Text(
+                const Text(
                   "The sum is : 0",
                   style: TextStyle(fontSize: 32),
                 )

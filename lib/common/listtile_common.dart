@@ -38,7 +38,7 @@ class CommonListTile extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => OutputScreen(
-              fullname: '$firstName',
+              fullname: firstName,
             ),
           ),
         );

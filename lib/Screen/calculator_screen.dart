@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CalculatorScreen extends StatefulWidget {
+  const CalculatorScreen({super.key});
+
   @override
   _CalculatorScreenState createState() => _CalculatorScreenState();
 }
@@ -38,7 +40,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Arithmetic Calculator'),
+        title: const Text('Arithmetic Calculator'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -47,14 +49,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             TextField(
               controller: num1Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'First number',
               ),
             ),
             TextField(
               controller: num2Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Second number',
               ),
             ),
@@ -68,7 +70,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     });
                     calculate();
                   },
-                  child: Text('Add'),
+                  child: const Text('Add'),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -77,7 +79,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     });
                     calculate();
                   },
-                  child: Text('Subtract'),
+                  child: const Text('Subtract'),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -86,7 +88,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     });
                     calculate();
                   },
-                  child: Text('Multiply'),
+                  child: const Text('Multiply'),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -95,14 +97,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     });
                     calculate();
                   },
-                  child: Text('Divide'),
+                  child: const Text('Divide'),
                 ),
               ],
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Text(
               'Result: $result',
-              style: TextStyle(fontSize: 24.0),
+              style: const TextStyle(fontSize: 24.0),
             ),
           ],
         ),

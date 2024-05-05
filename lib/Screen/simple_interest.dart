@@ -39,6 +39,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
                 if (value!.isEmpty) {
                   return 'Enter p';
                 }
+                return null;
               },
               onChanged: (value) {
                 principal = double.parse(value);
@@ -48,7 +49,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
               //   border: OutlineInputBorder(),
               //   labelText: 'Enter principal',
               // ),
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
                   ),
@@ -65,6 +66,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
                 if (value!.isEmpty) {
                   return 'Enter T';
                 }
+                return null;
               },
               onChanged: (value) {
                 time = double.parse(value);
@@ -81,6 +83,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
                 if (value!.isEmpty) {
                   return 'Enter R';
                 }
+                return null;
               },
               onChanged: (value) {
                 rate = double.parse(value);
