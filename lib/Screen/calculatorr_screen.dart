@@ -46,6 +46,15 @@ class _CalculatorScreenState extends State<CalculatorrScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (MediaQuery.of(context).orientation == Orientation.landscape) {
+      setState(() {
+        noOfButtons = 6;
+      });
+    } else {
+      setState(() {
+        noOfButtons = 4;
+      });
+    }
     return Scaffold(
       appBar: AppBar(
         title: const Text('Calculator App'),
